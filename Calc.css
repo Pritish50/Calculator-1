@@ -1,0 +1,100 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #d7d8d8;
+}
+
+
+.container{
+    width: 45%;
+    height: 45vh;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 12px 12px 20px #1f4f79 ,
+               -12px -12px 20px #90d0f2 ;
+}    
+
+.display .input{
+    width: 97%;
+    height: 70px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5rem;
+    background: #f5f7f8;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cad8e7,
+                inset -8px -8px 8px #c0cbd6;
+
+}
+
+.btns{
+    width: 100%;
+    margin-top: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.btns .row button{
+    width: 70px;
+    height: 30px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    margin: 5px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 8px #00000020,
+                -5px -5px 8px #ffff;
+
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 70%; 
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 80%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%; 
+    }
+
+    .btns .row button {
+        width: 50px; 
+        height: 35px;
+        font-size: 14px; 
+    }
+}
+@media (min-width: 200) and (max-width: 401px) {
+    .container {
+        width: 85%; 
+    }
+
+    .btns .row button {
+        width: 30px; 
+        height: 25px;
+        font-size: 11px; 
+    }
+}
